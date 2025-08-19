@@ -82,7 +82,7 @@ export default function FlashSales() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="flex items-center gap-2 mb-4">
         <span className="w-5 h-10 rounded bg-[#DB4444]"></span>
-        <span className="font-semibold text-lg text-[#DB4444]">Today's</span>
+        <span className="font-semibold text-lg text-[#DB4444]">Todays</span>
       </div>
 
       <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-4 gap-4">
