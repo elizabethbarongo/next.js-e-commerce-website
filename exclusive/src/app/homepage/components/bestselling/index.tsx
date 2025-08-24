@@ -12,7 +12,7 @@ const bestSellers = [
     originalPrice: 360,
     rating: 5,
     reviewsCount: 65,
-    imageUrl: "/images/north-coat.png"
+    imageUrl: "/image/jacket.png"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const bestSellers = [
     originalPrice: 1160,
     rating: 4,
     reviewsCount: 65,
-    imageUrl: "/images/gucci-bag.png"
+    imageUrl: "/image/bag.png"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const bestSellers = [
     originalPrice: 170,
     rating: 4,
     reviewsCount: 65,
-    imageUrl: "/images/cpu-cooler.png"
+    imageUrl: "/image/speaker.png"
   },
   {
     id: 4,
@@ -39,11 +39,11 @@ const bestSellers = [
     originalPrice: null,
     rating: 5,
     reviewsCount: 65,
-    imageUrl: "/images/bookshelf.png"
+    imageUrl: "/image/cupboard.png"
   }
 ];
 
-function StarRating({ rating }: { rating: number }) {
+function Rating({ rating }: { rating: number }) {
   return (
     <div className="flex items-center space-x-0.5">
       {[...Array(5)].map((_, index) => (
@@ -55,7 +55,7 @@ function StarRating({ rating }: { rating: number }) {
   );
 }
 
-export default function BestSellingProducts() {
+export default function Products() {
   return (
     <section className="max-w-7xl mx-auto px-5 sm:px-7 lg:px-10 py-8 border-b border-gray-300">
       <div className="flex items-center gap-3 mb-5">
@@ -111,7 +111,7 @@ export default function BestSellingProducts() {
                 )}
               </div>
               <div className="flex items-center space-x-3">
-                <StarRating rating={rating} />
+                <Rating rating={rating} />
                 <span className="text-gray-500 text-sm">({reviewsCount})</span>
               </div>
             </div>
